@@ -1,5 +1,7 @@
 from openai import OpenAI
 
+# py -m pip install openAi - execute this in the termial to install the openai package
+
 api_key = "api-key"
 
 client = OpenAI(api_key=api_key)
@@ -25,3 +27,4 @@ def process_text(text):
 
 user_input = input("What you want to know about: ")
 processed_content = process_text(user_input)
+print("Processed Content:\n", processed_content)
